@@ -59,7 +59,7 @@ namespace zen
          */
         void forget(std::size_t id)
         {
-            if(data.size() < id)
+            if(data.size() > id)
             {
                 hasCachedElements = false;
 
@@ -85,7 +85,7 @@ namespace zen
          *
          *  O(n)
          */
-        std::vector<T*> getElements() const
+        std::vector<T*> getElements()
         {
             if(hasCachedElements)
             {

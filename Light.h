@@ -12,6 +12,10 @@ namespace zen
         Light(Vec2f position, sf::Color color, float range);
 
         void setPosition(Vec2f position);
+
+        Vec2f getPosition();
+        sf::Color getColor();
+        float getRange();
     
     private:
         Vec2f position;

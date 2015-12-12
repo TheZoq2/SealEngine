@@ -23,11 +23,23 @@ namespace zen
          */
         void forgetLight(int id);
 
-        int lightAmount();
+        std::size_t lightAmount();
+        
+        std::vector<Light*> getLightVector();
+        std::vector<float> getRanges();
+        std::vector<sf::Color> getColors();
+        std::vector<Vec2f> getPositions();
     private:
+        void tryRegenerateLists();
+
         IDList<Light> lights;
 
         bool listHasChanged = true;
+
+        std::vector<Light*> lightVector;
+        std::vector<float> ranges;
+        std::vector<sf::Color> colors;
+        std::vector<Vec2f> positions;
     };
 } /* zen */ 
 #endif
