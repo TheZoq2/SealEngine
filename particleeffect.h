@@ -4,7 +4,6 @@
 #include <memory>
 
 #include "vec2f.h"
-#include "keyframeval.h"
 #include "components/TransformComponent.h"
 
 namespace zen

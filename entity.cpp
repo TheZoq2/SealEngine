@@ -1,7 +1,5 @@
 #include "entity.h"
 
-#include "components/SpriteComponent.h"
-
 using namespace zen;
 
 zen::Entity::Entity()
